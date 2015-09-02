@@ -29,7 +29,8 @@
               }
           });
           client.subscribe('/messages', function(message) {
-            $('#output').prepend(message.name +': ' + message.text + '<br />');
+            var escapedMessage = $("<div>").text(message.text).html();
+            $('#output').prepend(message.name +': ' + escapedMessage + '<br />');
             $.titleAlert("New!", {
               requireBlur:true,
               stopOnFocus:true,
