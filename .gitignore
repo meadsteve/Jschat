@@ -37,3 +37,8 @@ persist
 *.suo
 obj
 bin
+
+# js minifying pipeline
+/build-temp/
+/www/all.js
+/www/all.js.map

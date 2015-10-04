@@ -1,6 +1,3 @@
-var server = require("./lib/app");
-
-
-var port = process.env.PORT || 8001;
-server.listen(port);
-console.log('listening on: ' + port);
+console.log('ERROR: fayserver.js no longer used.');
+console.log('call "gulp serve" instead');
+process.exit(1);
